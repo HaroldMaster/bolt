@@ -1,0 +1,47 @@
+.flag-select {
+  background-color: #fff;
+  position: relative;
+
+  &__button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+  }
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  // right: -3rem;
+
+  &--hidden {
+    display: none;
+  }
+
+  &>button{
+    background: #fff;
+    border: none;
+    cursor:pointer
+  }
+  &__item{
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    border: .5px solid grey;
+    border-radius: 1px;
+    padding: .5rem;
+    &>img{
+      margin-right: .5rem;
+    }
+  }
+}

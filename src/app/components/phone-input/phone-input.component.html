@@ -1,0 +1,5 @@
+<form [formGroup]="form" class="form">
+  <!-- <app-image-select formControlName="code" [countries]='countries'></app-image-select> -->
+  <p>{{form.value.code}}</p>
+  <input formControlName="phone" type="text" class="form__input" placeholder="Phone number">
+</form>

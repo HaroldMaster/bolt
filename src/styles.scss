@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/base';
+@font-face {
+    font-family: "SF PRO";
+    src: local("SF PRO"), url(./assets/fonts/FontsFree-Net-SFProText-Regular.ttf) format("truetype");
+}
