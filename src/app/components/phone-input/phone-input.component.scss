@@ -1,25 +1,40 @@
-.form{
-  display: flex;
-  align-items: center;
-  border: 2px solid #34D186;
-  border-radius: 5px;
-  padding: 1.5rem;
-  &__input{
-    width: 12rem;
-    height: 2.1rem;
-  }
-  &>p{
-    font-size: 1.8rem;
-    margin-left: 1.1rem;
-    margin-right: 1.9rem;
-  }
-  &>input{
-    border: none;
-    font-size: 1.8rem;
-    &:focus{
-      outline:none;
+.form {
+  &__phone {
+    display: flex;
+    align-items: center;
+    border: 2px solid #34d186;
+    border-radius: 5px;
+    padding: 1.5rem;
+    &__input {
+      width: 12rem;
+      height: 2.1rem;
+      border: none;
+      font-size: 1.8rem;
+      &:focus {
+        outline: none;
+      }
+    }
+    & > p {
+      font-size: 1.8rem;
+      margin-left: 1.1rem;
+      margin-right: 1.9rem;
     }
   }
-  
-  
+  &__login {
+    margin-top: 25.9rem;
+    color: #34d186;
+    font-size: 1.5rem;
+    &-button:link,
+    &-button:visited {
+      color: #34d186;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  &__warning {
+    margin-top: .8rem;
+    color: red;
+    font-size: 1.5rem;
+  }
 }
+

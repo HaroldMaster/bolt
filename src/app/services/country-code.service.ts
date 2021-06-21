@@ -11,8 +11,15 @@ export class CountryCodeService {
     {name:'Colombia', img:'https://www.countryflags.io/co/shiny/32.png', code:'+522'},
     {name:'Perú', img:'https://www.countryflags.io/pe/shiny/32.png', code:'+213'},
   ]
+  private isAuth !: boolean;
   constructor() { }
   getCountries(){
     return this.codeCountries;
+  }
+  setIsAuth(auth:boolean){
+    this.isAuth = auth;
+  }
+  getIsAuth(){
+    return this.isAuth;
   }
 }

@@ -1,0 +1,7 @@
+<div class="enter-code center">
+    <h1 class="enter-code__title">Enter code</h1>
+    <p class="enter-code__info">An SMS code was sent to</p>
+    <p class="enter-code__phone-number">+593999878541</p>
+    <a class="enter-code__back">Edit phone number</a>
+    <app-number-input (emitSend)="emitSend($event)" (boxChange)="change($event)" (boxFocus)="focus($event)" [codeTimeOut]='timer'></app-number-input>
+</div>

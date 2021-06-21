@@ -1,5 +1,26 @@
-<form [formGroup]="form" class="form">
-  <!-- <app-image-select formControlName="code" [countries]='countries'></app-image-select> -->
-  <p>{{form.value.code}}</p>
-  <input formControlName="phone" type="text" class="form__input" placeholder="Phone number">
+
+<form [formGroup]="form" class="form" (submit)="canContinue()">
+  <div class="form__phone">
+    <app-image-select
+      id="imageTest"
+      formControlName="code"
+      [countries]="countries"
+    ></app-image-select>
+    <p>{{ form.value.code }}</p>
+    <input
+      formControlName="phone"
+      type="text"
+      class="form__phone__input"
+      placeholder="Phone number"
+      [OnlyNumber]='true'
+      [PasteOnlyNumbers]='true'
+      maxlength="10"
+      id="phoneInput"
+    />
+  </div>
+    <p *ngIf="form.get('phone')?.dirty || form.get('phone')?.touched"  class="form__warning">Enter a phone number of 10 digits before continue</p>
+  <div class="form__login">
+    <a class="form__login-button" href="">Log in with facebook</a>
+  </div>
+  <button [disabled]="form.invalid" [class.invalid]="form.invalid" type="submit" class="primary-button">CONTINUE</button>
 </form>

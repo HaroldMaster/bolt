@@ -1,6 +1,6 @@
 import { Component, forwardRef, Input, OnInit } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { CodeCountry } from 'src/app/models/code-countries.model';
+import { CodeCountry } from '../../models/code-countries.model';
 
 @Component({
   selector: 'app-image-select',
@@ -28,8 +28,10 @@ export class ImageSelectComponent implements OnInit, ControlValueAccessor {
   onTouched: any = () => {};
 
   writeValue(countryCode: string): void {
-    const selectedCountry = this.countries.find(country => country.code === countryCode);
-    this.selectedCountry = selectedCountry ? selectedCountry : {name: '', code: '', img: ''};
+    if(this.countries){
+      const selectedCountry = this.countries.find(country => country.code === countryCode);
+      this.selectedCountry = selectedCountry ? selectedCountry : {name: '', code: '', img: ''};
+    }
   }
 
   registerOnChange(fn: any): void {
@@ -40,7 +42,7 @@ export class ImageSelectComponent implements OnInit, ControlValueAccessor {
   }
 
   ngOnInit(): void {}
-
+ 
   openDropdown(): void {
     this.isHiddenDropdown = false;
   }

@@ -1,0 +1,31 @@
+.visited-places {
+  display: flex;
+  margin-top: 3.2rem;
+  &__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 2.1rem;
+  }
+  &__place {
+    font-weight: 300;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.03rem;
+    color: rgba(0, 0, 0, 0.75);
+    &>a{
+        text-decoration: none;
+        color: inherit;
+    }
+  }
+  &__country{
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    letter-spacing: -0.03rem;
+    color: rgba(0, 0, 0, 0.37);
+    &>a{
+        text-decoration: none;
+        color: inherit;
+    }
+  }
+}

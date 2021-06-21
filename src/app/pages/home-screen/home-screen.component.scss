@@ -1,0 +1,19 @@
+.home {
+  &-box {
+    margin-left: 2rem;
+    letter-spacing: -0.03rem;
+    &__greetings {
+      margin-top: 4.4rem;
+      font-size: 1.3rem;
+      line-height: 16px;
+      color: rgba(0, 0, 0, 0.64);
+    }
+    &__greetings-title {
+      margin-top: 0.4rem;
+      font-weight: 600;
+      font-size: 2.1rem;
+      line-height: 2.5rem;
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+}

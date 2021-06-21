@@ -1,0 +1,28 @@
+.enter-code {
+  letter-spacing: -0.03rem;
+  &__title {
+    font-weight: 600;
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+  }
+  &__info {
+    margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1.76rem;
+    line-height: 2.1rem;
+    color: rgba(0, 0, 0, 0.41);
+  }
+  &__phone-number {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 1.76rem;
+    line-height: 2.1rem;
+  }
+  &__back {
+    margin-top: 0.126rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #34d186;
+  }
+}

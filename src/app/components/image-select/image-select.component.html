@@ -1,6 +1,7 @@
 <div class="flag-select">
   <button
     class="flag-select__button"
+    data-test="test-select-button"
     (click)="isHiddenDropdown ? openDropdown() : closeDropdown()"
   >
     <img class="flag-select__icon" [src]="selectedCountry.img" />
@@ -8,7 +9,11 @@
   </button>
 
   <div class="dropdown" [class.dropdown--hidden]="isHiddenDropdown">
-    <button *ngFor="let country of countries" (click)="selectCountry(country)">
+    <button
+      data-test="test-option-button"
+      *ngFor="let country of countries"
+      (click)="selectCountry(country)"
+    >
       <div class="dropdown__item">
         <img [src]="country.img" [alt]="country.name" />
         <p>{{ country.name }}</p>

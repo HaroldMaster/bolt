@@ -1,0 +1,20 @@
+<div class="visited-places" *ngFor="let place of recentPlaces; let i = index">
+  <div class="visited-places__icon">
+    <img
+      [src]="
+        i == 0
+          ? '../../../assets/img/last-visited.svg'
+          : '../../../assets/img/ubication.svg'
+      "
+      alt=""
+    />
+  </div>
+  <div>
+    <p class="visited-places__place">
+      <a href=""> {{ place.place }}</a>
+    </p>
+    <p class="visited-places__country">
+        <a href="">{{ place.country }}</a>
+    </p>
+  </div>
+</div>

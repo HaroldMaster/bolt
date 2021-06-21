@@ -1,0 +1,61 @@
+<div class="number-container">
+  <form [formGroup]="form" (submit)="sendCode()">
+    <div class="number-container__box">
+      <input
+        class="number-container__box-input"
+        id="number__1"
+        placeholder="8"
+        maxlength="1"
+        [OnlyNumber]="true"
+        [PasteOnlyNumbers]="true"
+        (focus)="emitFocusBox('number__1')"
+        (input)="emitChangeBox($event, 'number__1')"
+        formControlName="box1"
+      />
+      <input
+        class="number-container__box-input"
+        id="number__2"
+        placeholder="0"
+        maxlength="1"
+        [OnlyNumber]="true"
+        [PasteOnlyNumbers]="true"
+        (focus)="emitFocusBox('number__2')"
+        (input)="emitChangeBox($event, 'number__2')"
+        formControlName="box2"
+      />
+      <input
+        class="number-container__box-input"
+        id="number__3"
+        placeholder="1"
+        maxlength="1"
+        [OnlyNumber]="true"
+        [PasteOnlyNumbers]="true"
+        (focus)="emitFocusBox('number__3')"
+        (input)="emitChangeBox($event, 'number__3')"
+        formControlName="box3"
+      />
+      <input
+        class="number-container__box-input"
+        id="number__4"
+        placeholder="4"
+        maxlength="1"
+        [OnlyNumber]="true"
+        [PasteOnlyNumbers]="true"
+        (focus)="emitFocusBox('number__4')"
+        (input)="emitChangeBox($event, 'number__4')"
+        formControlName="box4"
+      />
+    </div>
+
+    <p class="number-container__resend">
+      Resend code in {{ codeTimeOut | async }}
+    </p>
+    <button
+      class="number-container__button primary-button"
+      [class.invalid]="form.invalid"
+      [disabled]="form.invalid"
+    >
+      CONTINUE
+    </button>
+  </form>
+</div>
