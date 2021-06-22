@@ -8,14 +8,6 @@ export class RecentVisitedService {
     {place :'Mother and Child Hospital'},
     {place :'Ikeja City Mall', country:'Obafemi Awolowo Way, Ikeja Nigeria'},
     {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
-    {place: 'Lekky Phase 1', country:'Lekki Nigeria'},
   ];
   constructor() { }
   getRecent(){

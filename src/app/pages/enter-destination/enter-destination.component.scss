@@ -1,0 +1,50 @@
+.enter-destination {
+  &__header {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: .8rem;
+    & > img {
+      margin-right: 3.25rem;
+      width:2.25rem;
+      height:1.313rem
+    }
+    & > p {
+      font-weight: 500;
+      font-size: 2.3rem;
+      line-height: 2.7rem;
+      color: #000000;
+    }
+  }
+  &__search{
+      display: flex;
+      &__icons{
+          margin-right: 1rem;
+          display: flex;
+          justify-content:center;
+          align-items:center;
+          flex-direction:column;
+      }
+      &__inputs{
+          display: flex;
+          flex-direction:column;
+          justify-content:center;
+          &-destiny{
+              display: flex;
+              &>img{
+                  margin-left: 1.6rem;
+              }
+          }
+      }
+  }
+}
+app-destination:not(:last-child){
+    &::ng-deep input{
+        margin-bottom:.8rem;
+    }
+}
+.line{
+    height:2.9rem;
+    width: 0;
+    border-left: 1px solid black;
+}

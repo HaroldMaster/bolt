@@ -9,7 +9,7 @@ import { VerifyNumberModule } from './pages/verify-number/verify-number.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

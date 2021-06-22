@@ -5,7 +5,8 @@ import { VerifyNumberComponent } from './pages/verify-number/verify-number.compo
 const routes: Routes = [
   {path: '', component: VerifyNumberComponent},
   {path:'enter-code', loadChildren: () => import('./pages/enter-code/enter-code.module').then(m => m.EnterCodeModule)},
-  {path: 'home', loadChildren: () => import('./pages/home-screen/home-screen.module').then(m => m.HomeScreenModule)}
+  {path: 'home', loadChildren: () => import('./pages/home-screen/home-screen.module').then(m => m.HomeScreenModule)},
+  {path: 'destination', loadChildren: () => import('./pages/enter-destination/enter-destination.module').then(m => m.EnterDestinationModule)},
 ];
 
 @NgModule({

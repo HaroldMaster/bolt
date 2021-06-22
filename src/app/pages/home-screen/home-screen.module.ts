@@ -6,6 +6,7 @@ import { HomeScreenComponent } from './home-screen.component';
 import { MapComponent } from 'src/app/components/map/map.component';
 import { RecentVisitedComponent } from 'src/app/components/recent-visited/recent-visited.component';
 import { SearchDestinyComponent } from 'src/app/components/search-destiny/search-destiny.component';
+import { MenuComponent } from 'src/app/shared/menu/menu.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SearchDestinyComponent } from 'src/app/components/search-destiny/search
     HomeScreenComponent,
     MapComponent,
     RecentVisitedComponent,
-    SearchDestinyComponent
+    SearchDestinyComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,

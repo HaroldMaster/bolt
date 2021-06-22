@@ -1,11 +1,13 @@
-
+:host{
+  width:100%;
+  height:100%;
+}
 .container{
   width:100%;
   height:100%;
 }
 .iphone-x {
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow:hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -24,13 +26,13 @@
   }
   
   // home button indicator
-  &:after {
-    bottom: 7px;
-    width: 140px;
-    height: 4px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-  }
+  // &:after {
+  //   bottom: 7px;
+  //   width: 140px;
+  //   height: 4px;
+  //   background-color: #f2f2f2;
+  //   border-radius: 10px;
+  // }
   
   // frontal camera/speaker frame
   &:before {
@@ -93,29 +95,29 @@
   }
   
   // time
-  s {
-    top: 50px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    font-size: 70px;
-    font-weight: 100;
-    padding-top: 60px;
-  }
+  // s {
+  //   top: 50px;
+  //   color: #fff;
+  //   text-align: center;
+  //   text-decoration: none;
+  //   width: 100%;
+  //   font-size: 70px;
+  //   font-weight: 100;
+  //   padding-top: 60px;
+  // }
   
   // action buttons
-  span {
-    bottom: 50px;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    left: 30px;
+  // span {
+  //   bottom: 50px;
+  //   width: 40px;
+  //   height: 40px;
+  //   background-color: rgba(0, 0, 0, 0.3);
+  //   border-radius: 50%;
+  //   left: 30px;
     
-    & + span {
-      left: auto;
-      right: 30px;
-    }
-  }
+  //   & + span {
+  //     left: auto;
+  //     right: 30px;
+  //   }
+  // }
 }

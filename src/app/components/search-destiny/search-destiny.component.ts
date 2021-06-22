@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search-destiny',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchDestinyComponent implements OnInit {
 
+  @Output()
+  openSearchDestiny : EventEmitter<void> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+   
+  goToSearch(){
+    this.openSearchDestiny.emit();
   }
 
 }

@@ -1,0 +1,43 @@
+:host{
+    width:10rem;
+    height:10rem
+}
+.menu{
+    width:100%;
+    position: fixed !important;
+    top: 0;
+    width:5rem;
+    height:5rem;
+    background: white;
+    border-radius: 50%;
+    z-index: 2;
+    margin: 1.3rem;
+    &:hover{
+        cursor: pointer;
+    }
+    &__icon{
+        position: relative;    
+        margin-top: 2.45rem;
+        margin-left: 1.3rem;
+        &,
+        &::before,
+        &::after{
+           width: 2.5rem;
+           height: 2.4px;
+           background-color: black;
+           display: inline-block;
+        }
+        &::before,
+        &::after{
+           content:"";
+           position: absolute;
+           
+        }
+        &::before{
+           top: -.8rem;
+        }
+        &::after{
+           top: .8rem;
+        }
+     }
+}
